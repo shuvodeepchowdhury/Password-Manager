@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --text-color: #1e293b;
+    --accent-color: #c084fc;
+    --accent-dark: #9333ea;
+    --button-bg-color: #f8fafc;
+    --form-color: #f3e8ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.App {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.generator {
+    width: 400px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: var(--form-color);
+}
+
+.generator__title, .password {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.generator__form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.generator__form-control input {
+    accent-color: var(--accent-color);
+}
+
+.generator__length {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background: var(--button-bg-color);
+}
+
+.generator__length-counter button {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: var(--accent-dark);
+    background-color: var(--button-bg-color);
+    border: 2px solid var(--accent-dark);
+    border-radius: 10px;
+    transition: all 200ms linear;
+    cursor: pointer;
+}
+
+.generator__length-counter button:hover {
+    color: var(--button-bg-color);
+    background-color: var(--accent-dark);
+    border: 2px solid var(--accent-dark);
+}
+
+.generator__length-counter span{
+    display: inline-block;
+    font-size: 18px;
+    width: 36px;
+    text-align: center;
+}
+
+.generator__form-actions {
+    display: flex;
+    gap: 6px;
+    justify-content: space-around;
+}
+
+.generator__form-actions .btn {
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.generator__form-actions button {
+    /* background: linear-gradient(to right, #E9D8FD, #B794F4); */
+    transition: all 200ms linear;
+    color: var(--button-bg-color);
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-dark);
+}
+
+.generator__form-actions button:hover {
+    background-color: var(--accent-dark);
+}
